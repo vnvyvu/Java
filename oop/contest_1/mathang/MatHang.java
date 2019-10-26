@@ -22,7 +22,11 @@ public class MatHang {
         if("".equalsIgnoreCase(ten)){
             throw new MatHangException("Invalid format");
         }
-        if(Arrays.binarySearch(types,nhom.toLowerCase())==-1){
+        boolean check=false;
+        for(int i=0;i<types.length;i++){
+            if(types[i].compareToIgnoreCase(nhom)==0) check=true;
+        }
+        if(check){
             throw new MatHangException("Invalid format");
         }
         if(Double.compare(giaBan, 0)<=0){

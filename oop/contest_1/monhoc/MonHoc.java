@@ -22,7 +22,11 @@ public class MonHoc {
         if("".equalsIgnoreCase(tenMon)){
             throw new MonHocException("Invalid format");
         }
-        if(Arrays.binarySearch(types, nhomMon.toLowerCase())==-1){
+        boolean check=false;
+        for(int i=0;i<types.length;i++){
+            if(types[i].compareToIgnoreCase(nhomMon)==0) check=true;
+        }
+        if(check){
             throw new MonHocException("Invalid format");
         }
         if(soTinChi<=0||soTinChi>=7){

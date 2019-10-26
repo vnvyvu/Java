@@ -14,9 +14,7 @@ public class main {
         while(in.hasNextLine()){
             try {
                 ds.add(new MatHang(Integer.parseInt(in.nextLine()), in.nextLine(), in.nextLine(), Double.parseDouble(in.nextLine())));
-            } catch (MatHangException ex) {
-                
-            } catch (NoSuchElementException ex){
+            } catch (MatHangException | NoSuchElementException ex) {
                 
             }
         }

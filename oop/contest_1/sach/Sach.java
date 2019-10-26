@@ -1,6 +1,5 @@
 package oop.contest_1.sach;
 
-import java.util.Arrays;
 
 /**
  *
@@ -22,7 +21,11 @@ public class Sach {
         if("".equalsIgnoreCase(tenSach)){
             throw new SachException("Invalid format");
         }
-        if(Arrays.binarySearch(types,chuyenNganh.toLowerCase())==-1){
+        boolean check=false;
+        for(int i=0;i<types.length;i++){
+            if(types[i].compareToIgnoreCase(chuyenNganh)==0) check=true;
+        }
+        if(check){
             throw new SachException("Invalid format");
         }
         if(Double.compare(giaBan, 0)<=0){

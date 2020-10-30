@@ -1,2 +1,2 @@
-# JavaFX
-Lập trình hướng đối tượng - Thầy Nguyễn Mạnh Sơn
+# Java
+My basical java programs

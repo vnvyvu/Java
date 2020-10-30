@@ -1,2 +1,2 @@
 # Java
-My basical java programs
+My basic java programs
